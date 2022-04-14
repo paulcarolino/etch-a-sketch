@@ -51,11 +51,17 @@ range.addEventListener("input", (e) => {
     gridRange.innerHTML = `${range.value} x ${range.value}`;
 });
 
+//Select the 2 button
+//Check if the button already has the class of active
+//else put active once click to the other and remove to the other one
+//
 modeButton.forEach(button => {
+
     button.addEventListener("click", e => {
         mode = button.innerText.toLowerCase();
         deleteSqaure();
         createSqaure(container, range.value, mode);
-    })
+    });
 })
+
 

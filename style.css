@@ -10,6 +10,14 @@ input {
     cursor: pointer
 }
 
+button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background-color: #ededed;
+    color: #333;
+    border-radius: 5px;
+}
+
 .title {
     text-align: center;
 }
@@ -51,27 +59,26 @@ input {
     gap: 15px;
     background-color: #fefefe;
     padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #333;
 
 }
 
 .modes-button {
     margin: 0 auto;
-    background-color: #333;
-    border-radius: 0.5rem;
-    color: #ffffff;
     padding: 0.5rem 1rem;
-    border: none;
+
 }
 
 
 #reset {
     display: block;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #333;
-    color: #ffffff;
-    border-radius: 0.5rem;
+
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .instructions h2 {
@@ -82,6 +89,7 @@ input {
 
 
 .grid-range {
+    margin-top: 20px;
     font-size: 1.5em;
     font-style: italic;
 }
@@ -94,6 +102,11 @@ input {
 
 
 .active-button {
-    background-color: #fefefe;
-    color: #333;
+    background-color: #333;
+    color: #ededed;
+}
+
+button:active {
+    background-color: #333;
+    color: #ededed;
 }
